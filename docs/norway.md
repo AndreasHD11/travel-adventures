@@ -1,8 +1,9 @@
 ---
-icon: lucide/rocket
+icon: flags/no
+comments: true
 ---
 
-# Get started
+# Norway
 
 For full documentation visit [zensical.org](https://zensical.org/docs/).
 

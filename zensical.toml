@@ -1,7 +1,7 @@
 [project]
-site_url = "https://www.example.com/"
+site_url = "https://andreashd11.github.io/travel-adventures/"
 site_name = "Travelling Blogs"
-# site_description = "Your project description"
+site_description = "This is a blog website about travelling to cool places"
 # site_author = "Andreas Hernandez Denyer & Carla Broussy"
 
 # copyright = "Copyright &copy; 2026 Your name"
@@ -11,16 +11,16 @@ site_name = "Travelling Blogs"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  { "Tanzania" = "tanzania.md" },
+  { "Norway" = "norway.md" },
 ]
 
-# extra_css = ["stylesheets/extra.css"]
-# extra_javascript = ["javascripts/extra.js"]
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
 # variant = "classic"
-# custom_dir = "overrides"
+custom_dir = "overrides"
 # favicon = "images/favicon.png"
 language = "en"
 features = [
@@ -57,9 +57,9 @@ features = [
 # [project.theme.icon]
 # logo = "lucide/smile"
 
-# [project.theme.font]
-# text = "Inter"
-# code = "Jetbrains Mono"
+[project.theme.font]
+text = "Outfit"
+code = "Jetbrains Mono"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
@@ -108,6 +108,9 @@ pymdownx.keys = {}
 pymdownx.magiclink = {}
 pymdownx.mark = {}
 pymdownx.smartsymbols = {}
+pymdownx.emoji.options.custom_icons = [
+  "overrides/.icons",
+]
 # pymdownx.snippets.base_path = "includes"
 pymdownx.superfences.custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
@@ -116,3 +119,6 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
+
+[project.plugins.glightbox]
+
